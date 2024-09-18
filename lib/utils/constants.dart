@@ -18,16 +18,16 @@ class Examen {
   Examen(this.id, this.numero, this.titulo, this.descripcion, this.estrellas);
 }
 const List<String> listaExamen = [
-  '17#17#Iniciar el examen, para poder ir a dormir tranquilo#Subir el examen antes de las 9 am del viernes#5',
-  '18#18#Terminar y enviar mi examen para no reprobar#No quiero reprobar#4',
-  '19#19#Revisar 36 examenes#Los alumnos tendrán todo lo que se les pidió#3',
-  '20#20#Revisar tareas#Llenar la lista con las calificaciones#2',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
+  '17#17#Iniciar el examen, para poder ir a dormir tranquilo#Subir el examen antes de las 9 am del viernes#12',
+  '18#18#Terminar y enviar mi examen para no reprobar#No quiero reprobar#11',
+  '19#19#Revisar 36 examenes#Los alumnos tendrán todo lo que se les pidió#10',
+  '20#20#Revisar tareas#Llenar la lista con las calificaciones#9',
+  '21#21#hola#como estas#8',
+  '22#22#es hora de trabajar#jeje#7',
+  '23#23#ojala pase el examen#si no pues ni modo#6',
+  '24#24#no se que mas escribir#este es un  texto de relleno#5',
+  '25#25#no se que mas escribir#este es un  texto de relleno#4',
+  '26#26#no se que mas escribir#este es un  texto de relleno#3',
+  '27#27#no se que mas escribir#este es un  texto de relleno#2',
+  '28#28#no se que mas escribir#este es un  texto de relleno#1',
 ];
