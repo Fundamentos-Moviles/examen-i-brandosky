@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:examen1_rdlb/utils/constants.dart' as con;
+import 'package:examen1_rdlb/home.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -110,12 +111,17 @@ class _LoginState extends State<Login> {
                       ),
                       onPressed: () {
                         setState(() {
-                          if (user.text.isEmpty || pass.text.isEmpty) {
+                          String inputUser = user.text.trim();  // Eliminar espacios en blanco
+                          String inputPass = pass.text.trim();  // Eliminar espacios en blanco
+
+                          if (inputUser.isEmpty || inputPass.isEmpty) {
                             errorMessage = "Datos incompletos";
-                          } else if (user.text != "test" || pass.text != "FDM1") {
-                            errorMessage = user.text != "test"
-                                ? "Usuario incorrecto"
-                                : "Contraseña incorrecta";
+                          } else if (inputUser != "test" || inputPass != "FDM1") {
+                            if (inputUser != "test") {
+                              errorMessage = "Usuario incorrecto";
+                            } else if (inputPass != "FDM1") {
+                              errorMessage = "Contraseña incorrecta";
+                            }
                           } else {
                             errorMessage = "";
                             Navigator.pushReplacementNamed(context, '/home');
