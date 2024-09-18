@@ -35,6 +35,7 @@ class _LoginState extends State<Login> {
                 Expanded(
                   child: Row(
                     children: [
+                      
                       Expanded(child: Container(color: con.fondo2)),
                       Expanded(child: Container(color: con.fondo)),
                       Expanded(child: Container(color: con.fondo4)),

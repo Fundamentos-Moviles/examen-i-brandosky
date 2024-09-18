@@ -20,6 +20,6 @@ class Examen {
 }
 
 // Lista de elementos de examen
-final List<Examen> listaExamen = [
+final List<Examen> lista = [
 
 ];
