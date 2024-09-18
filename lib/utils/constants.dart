@@ -7,6 +7,9 @@ const Color fondo4 = Color(0xffb20222);
 const Color titulos = Color(0xff948800);
 const Color botones = Color(0xffa65476);
 const Color efectos = Color(0xff919b02);
+const Color recuadroColor = Color(0xff1a73e8);
+const Color estrella=Colors.amber;
+const Color blanco=Colors.white;
 
 class Examen {
   final int id;

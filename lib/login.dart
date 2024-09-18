@@ -75,7 +75,7 @@ class _LoginState extends State<Login> {
                           borderRadius: BorderRadius.circular(10),
                         ),
                         labelText: 'Correo/Usuario',
-                        fillColor: Colors.white,
+                        fillColor: con.blanco,
                         filled: true,
                       ),
                     ),
@@ -88,7 +88,7 @@ class _LoginState extends State<Login> {
                           borderRadius: BorderRadius.circular(10),
                         ),
                         labelText: 'Contraseña',
-                        fillColor: Colors.white,
+                        fillColor: con.blanco,
                         filled: true,
                       ),
                     ),
@@ -98,7 +98,7 @@ class _LoginState extends State<Login> {
                         padding: const EdgeInsets.only(bottom: 10.0),
                         child: Text(
                           errorMessage,
-                          style: const TextStyle(color: Colors.red),
+                          style: const TextStyle(color:con.botones),
                         ),
                       ),
                     ElevatedButton(

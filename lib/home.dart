@@ -67,7 +67,7 @@ class _HomeState extends State<Home> {
                                 estrellas,
                                     (starIndex) => const Icon(
                                   Icons.star,
-                                  color: Colors.amber,
+                                  color: con.estrella,
                                 ),
                               ),
                             ),
