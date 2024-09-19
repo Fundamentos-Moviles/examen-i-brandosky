@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:examen1_rdlb/utils/constants.dart' as con;
-import 'package:examen1_rdlb/home.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -17,30 +16,102 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: con.fondo4, // Ajusta el color de fondo del Scaffold aquí
       body: Stack(
         children: [
-          // Contenedores para el fondo de colores
+          // Contenedores para el fondo de colores con separación y bordes redondeados
           Positioned.fill(
             child: Column(
               children: [
                 Expanded(
                   child: Row(
                     children: [
-                      Expanded(child: Container(color: con.fondo)),
-                      Expanded(child: Container(color: con.fondo2)),
-                      Expanded(child: Container(color: con.fondo3)),
-                      Expanded(child: Container(color: con.fondo4)),
+                      Expanded(
+                        child: Container(
+                          margin: const EdgeInsets.all(4),
+                          decoration: BoxDecoration(
+                            color: con.fondo,
+                            border: Border.all(color: Colors.black.withOpacity(0.3), width: 1),
+                            borderRadius: BorderRadius.circular(15), // Bordes redondeados
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: Container(
+                          margin: const EdgeInsets.all(4),
+                          decoration: BoxDecoration(
+                            color: con.fondo2,
+                            border: Border.all(color: Colors.black.withOpacity(0.3), width: 1),
+                            borderRadius: BorderRadius.circular(15), // Bordes redondeados
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: Container(
+                          margin: const EdgeInsets.all(4),
+                          decoration: BoxDecoration(
+                            color: con.fondo3,
+                            border: Border.all(color: Colors.black.withOpacity(0.3), width: 1),
+                            borderRadius: BorderRadius.circular(15), // Bordes redondeados
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: Container(
+                          margin: const EdgeInsets.all(4),
+                          decoration: BoxDecoration(
+                            color: con.fondo4,
+                            border: Border.all(color: Colors.black.withOpacity(0.3), width: 1),
+                            borderRadius: BorderRadius.circular(15), // Bordes redondeados
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ),
                 Expanded(
                   child: Row(
                     children: [
-                      
-                      Expanded(child: Container(color: con.fondo2)),
-                      Expanded(child: Container(color: con.fondo)),
-                      Expanded(child: Container(color: con.fondo4)),
-                      Expanded(child: Container(color: con.fondo3)),
+                      Expanded(
+                        child: Container(
+                          margin: const EdgeInsets.all(4),
+                          decoration: BoxDecoration(
+                            color: con.fondo2,
+                            border: Border.all(color: Colors.black.withOpacity(0.3), width: 1),
+                            borderRadius: BorderRadius.circular(15), // Bordes redondeados
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: Container(
+                          margin: const EdgeInsets.all(4),
+                          decoration: BoxDecoration(
+                            color: con.fondo,
+                            border: Border.all(color: Colors.black.withOpacity(0.3), width: 1),
+                            borderRadius: BorderRadius.circular(15), // Bordes redondeados
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: Container(
+                          margin: const EdgeInsets.all(4),
+                          decoration: BoxDecoration(
+                            color: con.fondo4,
+                            border: Border.all(color: Colors.black.withOpacity(0.3), width: 1),
+                            borderRadius: BorderRadius.circular(15), // Bordes redondeados
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: Container(
+                          margin: const EdgeInsets.all(4),
+                          decoration: BoxDecoration(
+                            color: con.fondo3,
+                            border: Border.all(color: Colors.black.withOpacity(0.3), width: 1),
+                            borderRadius: BorderRadius.circular(15), // Bordes redondeados
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ),
@@ -98,7 +169,7 @@ class _LoginState extends State<Login> {
                         padding: const EdgeInsets.only(bottom: 10.0),
                         child: Text(
                           errorMessage,
-                          style: const TextStyle(color:con.botones),
+                          style: TextStyle(color: con.botones),
                         ),
                       ),
                     ElevatedButton(
@@ -133,7 +204,7 @@ class _LoginState extends State<Login> {
                     const SizedBox(height: 10.0),
                     const Text(
                       'Mi primer examen, ¿estará sencillo?',
-                      style: TextStyle(color: Colors.grey),
+                      style: TextStyle(color: con.titulos),
                     ),
                   ],
                 ),

@@ -14,6 +14,10 @@ class _MoreInfoState extends State<MoreInfo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('More Info'),
+        backgroundColor: con.botones,
+      ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
         child: Column(
@@ -36,31 +40,28 @@ class _MoreInfoState extends State<MoreInfo> {
             ),
             const SizedBox(height: 20),
             Expanded(
-              child: ListView(
-                children: [
-                  Wrap(
-                    children: recuadros.take(12).toList(), // Primeros 12 recuadros
-                  ),
-                  const SizedBox(height: 20),
-                  // Subsecuentes grupos de recuadros en bloques de 12
-                  if (recuadros.length > 12)
-                    for (int i = 12; i < recuadros.length; i += 12)
-                      Padding(
-                        padding: const EdgeInsets.only(top: 20.0),
-                        child: Container(
-                          padding: const EdgeInsets.all(10.0),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          child: Wrap(
-                            children: recuadros
-                                .skip(i)
-                                .take(12)
-                                .toList(), // Bloques adicionales de 12 recuadros
-                          ),
-                        ),
+              child: ListView.builder(
+                itemCount: (recuadros.length / 12).ceil(),
+                itemBuilder: (context, index) {
+                  final start = index * 12;
+                  final end = (start + 12).clamp(0, recuadros.length);
+
+                  return Padding(
+                    padding: const EdgeInsets.only(bottom: 20.0),
+                    child: Container(
+                      padding: const EdgeInsets.all(10.0),
+                      decoration: BoxDecoration(
+                        color: con.fondo4,
+                        borderRadius: BorderRadius.circular(10),
                       ),
-                ],
+                      child: Wrap(
+                        spacing: 8.0,
+                        runSpacing: 8.0,
+                        children: recuadros.sublist(start, end),
+                      ),
+                    ),
+                  );
+                },
               ),
             ),
           ],
