@@ -16,10 +16,10 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: con.fondo4, // Ajusta el color de fondo del Scaffold aquí
+      backgroundColor: con.fondo4,
       body: Stack(
         children: [
-          // Contenedores para el fondo de colores con separación y bordes redondeados
+
           Positioned.fill(
             child: Column(
               children: [
@@ -32,7 +32,7 @@ class _LoginState extends State<Login> {
                           decoration: BoxDecoration(
                             color: con.fondo,
                             border: Border.all(color: Colors.black.withOpacity(0.3), width: 1),
-                            borderRadius: BorderRadius.circular(15), // Bordes redondeados
+                            borderRadius: BorderRadius.circular(15),
                           ),
                         ),
                       ),
@@ -42,7 +42,7 @@ class _LoginState extends State<Login> {
                           decoration: BoxDecoration(
                             color: con.fondo2,
                             border: Border.all(color: Colors.black.withOpacity(0.3), width: 1),
-                            borderRadius: BorderRadius.circular(15), // Bordes redondeados
+                            borderRadius: BorderRadius.circular(15),
                           ),
                         ),
                       ),
@@ -52,7 +52,7 @@ class _LoginState extends State<Login> {
                           decoration: BoxDecoration(
                             color: con.fondo3,
                             border: Border.all(color: Colors.black.withOpacity(0.3), width: 1),
-                            borderRadius: BorderRadius.circular(15), // Bordes redondeados
+                            borderRadius: BorderRadius.circular(15),
                           ),
                         ),
                       ),
@@ -62,7 +62,7 @@ class _LoginState extends State<Login> {
                           decoration: BoxDecoration(
                             color: con.fondo4,
                             border: Border.all(color: Colors.black.withOpacity(0.3), width: 1),
-                            borderRadius: BorderRadius.circular(15), // Bordes redondeados
+                            borderRadius: BorderRadius.circular(15),
                           ),
                         ),
                       ),
@@ -78,7 +78,7 @@ class _LoginState extends State<Login> {
                           decoration: BoxDecoration(
                             color: con.fondo2,
                             border: Border.all(color: Colors.black.withOpacity(0.3), width: 1),
-                            borderRadius: BorderRadius.circular(15), // Bordes redondeados
+                            borderRadius: BorderRadius.circular(15),
                           ),
                         ),
                       ),
@@ -88,7 +88,7 @@ class _LoginState extends State<Login> {
                           decoration: BoxDecoration(
                             color: con.fondo,
                             border: Border.all(color: Colors.black.withOpacity(0.3), width: 1),
-                            borderRadius: BorderRadius.circular(15), // Bordes redondeados
+                            borderRadius: BorderRadius.circular(15),
                           ),
                         ),
                       ),
@@ -98,7 +98,7 @@ class _LoginState extends State<Login> {
                           decoration: BoxDecoration(
                             color: con.fondo4,
                             border: Border.all(color: Colors.black.withOpacity(0.3), width: 1),
-                            borderRadius: BorderRadius.circular(15), // Bordes redondeados
+                            borderRadius: BorderRadius.circular(15),
                           ),
                         ),
                       ),
@@ -108,7 +108,7 @@ class _LoginState extends State<Login> {
                           decoration: BoxDecoration(
                             color: con.fondo3,
                             border: Border.all(color: Colors.black.withOpacity(0.3), width: 1),
-                            borderRadius: BorderRadius.circular(15), // Bordes redondeados
+                            borderRadius: BorderRadius.circular(15),
                           ),
                         ),
                       ),
@@ -125,7 +125,7 @@ class _LoginState extends State<Login> {
                 padding: const EdgeInsets.all(20.0),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(40),
-                  color: Colors.white.withOpacity(0.9), // Transparencia del fondo blanco
+                  color: Colors.white.withOpacity(0.9),
                 ),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
@@ -182,8 +182,8 @@ class _LoginState extends State<Login> {
                       ),
                       onPressed: () {
                         setState(() {
-                          String inputUser = user.text.trim();  // Eliminar espacios en blanco
-                          String inputPass = pass.text.trim();  // Eliminar espacios en blanco
+                          String inputUser = user.text.trim();
+                          String inputPass = pass.text.trim();
 
                           if (inputUser.isEmpty || inputPass.isEmpty) {
                             errorMessage = "Datos incompletos";
